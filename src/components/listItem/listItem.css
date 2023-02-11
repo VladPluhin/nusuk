@@ -1,0 +1,31 @@
+.list-icons .list-icons--icon{
+  border-radius: 50%;
+  width: 70px;
+  margin: 0 auto 15px;
+  height: 70px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+
+
+.list-icons--icon  img{
+    max-width: 30px;
+} 
+
+
+.list-icons.bg-icons .list-icons--icon {
+  background-color: #ebe3d8;
+  border-color: #b39164;
+}
+
+.list-icons li:last-child{
+  margin-right: 0px;
+} 
+
+.section-main__content-block {
+  margin-bottom: 40px;
+}
+

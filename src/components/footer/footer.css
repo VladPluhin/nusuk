@@ -1,0 +1,44 @@
+.footer {
+  z-index: 3;
+  padding: 16px 0 11px;
+  background-color: #e9e9e9;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+
+.footer__navlist {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content:space-around;
+}
+
+.footer__navlist  li > span{
+  text-align: center;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.footer__navlist  li:last-child{
+  margin-right: 0px;
+}
+
+.footer__navlist .list-icons--icon {
+  max-width: 25px;
+}
+
+.footer__navlist img {
+  max-width: 19px;
+}
+
+
+.footer__navlist  .list-icons--subtitle {
+  font-size: 15px;
+}

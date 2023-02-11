@@ -1,0 +1,46 @@
+.sectionForm {
+  transition: all .3s ease ;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  z-index: 2;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 70px 0 ;
+  transform: translateY(200%);
+}
+
+
+.sectionForm.sectionForm-active {
+  transform: translateY(0px);
+  visibility: visible;
+}
+.form__info {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form__info-group  label{
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form__info-group {
+  margin-bottom: 25px;
+}
+
+input {
+  border: 1px solid  #D1D1D1;
+  border-radius: 5px;
+  min-height: 30px;
+  padding: 7px;
+  width: 96%;
+  transition: border-color .3s ease;
+}
+
+input:focus { 
+  border-color: #756d6d;
+}
+
