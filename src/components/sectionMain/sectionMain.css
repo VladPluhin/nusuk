@@ -56,3 +56,10 @@
 .section-main__content-block {
   padding-top: 33px;
 }
+
+
+@media (max-width: 420px) { 
+  .section-main__content {
+    height: calc(100vh - 225px);
+  }
+}

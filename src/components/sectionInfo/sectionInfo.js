@@ -90,29 +90,31 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
                                     {formData.dayHijri.length > 0 && <span className='day hijri'>{formData.dayHijri}</span>}
                                 </div>
                               </div>
-                            
                                 {formData.timeFromTo.length > 0 &&
-                                      <div className='user-info time'>
-                                        <span className='icon-time icon'>
-                                          <img src={image13}/>
-                                        </span>
-                                        <div className='info-body'>
-                                          <span  className='user-subtitle'> Time (From-To)</span>
-                                          <span className='day'>{formData.timeFromTo}</span>
+                                    <div className='user-info time'>
+                                        <div>
+                                            <span className='icon-time icon'>
+                                              <img src={image13}/>
+                                            </span>
+                                            <div className='info-body'>
+                                              <span  className='user-subtitle'> Time (From-To)</span>
+                                              <span className='day'>{formData.timeFromTo}</span>
+                                              </div>
                                           </div>
+                                          {formData.arrivingTime.length > 0 && activeUmrah && 
+                                              <div>
+                                                  <span className='icon-time icon'>
+                                                    <img src={image13}/>
+                                                  </span>
+                                                  <div className='info-body'>
+                                                    <span  className='user-subtitle'> Arriving Time</span>
+                                                    <span className='day hijri'>{formData.arrivingTime}</span>
+                                                </div>
+                                              </div>
+                                            }
                                       </div>
                                 }
-                                {formData.arrivingTime.length > 0 &&
-                                    <div className='user-info time'>
-                                          <span className='icon-time icon'>
-                                            <img src={image14}/>
-                                          </span>
-                                        <div className='info-body'>
-                                          <span  className='user-subtitle'> Arriving Time</span>
-                                          <span className='day hijri'>{formData.arrivingTime}</span>
-                                      </div>
-                                    </div>
-                                    }
+                               
                             </div>
                         </div>
                     </div>
