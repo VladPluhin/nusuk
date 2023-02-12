@@ -12,11 +12,11 @@ function App ({data}) {
   const [activeNoble, setActiveNoble]= useState(false)
  
   const [formData, setFormData]= useState({
-    name: 'Abdurrashid',
+    name: 'ABU BAKR',
     dayGregorian: '18 Feb 2023',
     dayHijri: '27 Raj. 1544',
     timeFromTo: '02:01-04:00',
-    arrivingTime: ''
+    arrivingTime: '02:00'
   })
     
   const getFilterValue =( key, value) => {

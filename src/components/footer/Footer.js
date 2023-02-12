@@ -30,7 +30,7 @@ function Footer ({ isFormActive, setForm}) {
                       <span className='list-icons--icon'>
                           <img src={image08}  alt='Permints'/>
                       </span>
-                      <span className='list-icons--subtitle'>Permints</span>
+                      <span className='list-icons--subtitle'>Permits</span>
                   </span>
               </li>
               <li>
@@ -46,7 +46,7 @@ function Footer ({ isFormActive, setForm}) {
                         <span className='list-icons--icon'>
                             <img src={image10}  alt="more"/>
                         </span>
-                        <span className='list-icons--subtitle'>more</span>
+                        <span className='list-icons--subtitle'>More</span>
                     </span>
               </li>
         </ul>

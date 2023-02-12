@@ -21,8 +21,9 @@
   right: 33px;
 }
 .section-main__content .container {
-  position: relative;
-  z-index: 2;
+    position: relative;
+    z-index: 2;
+    text-transform: uppercase;
 }
 .section-main__content .bg-image { 
   top: 0;

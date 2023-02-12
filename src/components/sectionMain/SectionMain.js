@@ -32,7 +32,7 @@ const SectionMain=({formData,activeUmrah, setActiveUmrah, activeNoble, setActive
             <div className='section-main__heading'>
                 <div className='bg-image'> <img src={bgIcon}  alt='image description'/></div>
                 <div className='container'>
-                    <h1>welcome</h1>
+                    <h1>Welcome</h1>
                     <h3>{formData.name}</h3>
                 </div>
             </div>
@@ -41,25 +41,25 @@ const SectionMain=({formData,activeUmrah, setActiveUmrah, activeNoble, setActive
                 <div className='scrolling-block'>
                     <div className='container'>
                         <div className='section-main__content-block'>
-                                <h5 className='section-main__subtitle'>Local Hajj seriveces</h5>
+                                <h5 className='section-main__subtitle'>Local Hajj services</h5>
                                 <ul className='bg-icons list-icons' >
                                     <li>
                                         <span className='list-icons--icon'>
                                             <img src={image01}  alt="reservation"/>
                                         </span>
-                                        <span className='list-icons--subtitle'>reservation</span>
+                                        <span className='list-icons--subtitle'>Reservation</span>
                                     </li>
                                     <li>
                                         <span className='list-icons--icon'>
                                             <img src={image02}  alt="reservation Management"/>
                                         </span>
-                                        <span className='list-icons--subtitle'>reservation Management</span>
+                                        <span className='list-icons--subtitle'>Reservation Management</span>
                                     </li>
                                     <li>
                                         <span className='list-icons--icon'>
                                             <img src={image03}  alt='refund'/>
                                         </span>
-                                        <span className='list-icons--subtitle'>refund</span>
+                                        <span className='list-icons--subtitle'>Refund</span>
                                     </li>
                                 </ul>
                         </div>
@@ -75,19 +75,19 @@ const SectionMain=({formData,activeUmrah, setActiveUmrah, activeNoble, setActive
                                 </ul>
                         </div>
                         <div className='section-main__content-block'>
-                                <h5 className='section-main__subtitle'>Prophet`s Mosque Services</h5>
+                                <h5 className='section-main__subtitle'>Prophet's Mosque Services</h5>
                                 <ul className='list-icons' >
                                     <li  onClick={()=> getNoble(activeNoble, setActiveNoble)}>
                                         <span className='list-icons--icon'>
                                             <img src={image05}  alt="reservation"/>
                                         </span>
-                                        <span className='list-icons--subtitle'>Praying in the Nobel Rawdah-Men</span>
+                                        <span className='list-icons--subtitle'>Praying in the Nobel Rawdah- Men</span>
                                     </li>
                                     <li  onClick={()=> getNoble(activeNoble, setActiveNoble)}>
                                         <span className='list-icons--icon'>
                                             <img src={image06}  alt="reservation Management"/>
                                         </span>
-                                        <span className='list-icons--subtitle'>Praying in the Nobel Rawdah-Women</span>
+                                        <span className='list-icons--subtitle'>Praying in the Nobel Rawdah- Women</span>
                                     </li>
                                 </ul>
                         </div>

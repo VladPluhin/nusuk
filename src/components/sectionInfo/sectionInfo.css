@@ -61,11 +61,11 @@
     margin: 0;
 }
 @keyframes border-green {
-    0% {border-color:  rgb(140 224 172 / 0%)}
+    50% {border-color:  rgb(140 224 172 / 0%)}
     100% {border-color:  rgb(140 224 172 / 100%)}
   }
   @keyframes border-orange {
-    0% {border-color:  rgb(254 196 34 / 0%)}
+    50% {border-color:  rgb(254 196 34 / 0%)}
     100% {border-color:  rgbrgb(254 196 34 / 100%)}
   }
 

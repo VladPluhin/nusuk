@@ -12,23 +12,29 @@ import image14 from '../../assets/images/image14.png'
 
 const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActiveNoble, })=> {
   const [popupIsActive, setPopupIsActive] = useState(false)
- 
+
+  function random() {
+      const min = 10100000;
+      const max = 10200000;
+      const rand = min + Math.random() * (max - min);
+      return rand.toFixed(0);
+  }
+
   function getHome()  {
     setActiveUmrah(false)
     setActiveNoble(false)
   }
 
   const infoPerson= [
-    {info: "Umrah"},
-    {info: "Reservation number:101326349"},
-    {info: "Permit number: 102198192"}
+      { info: "Umrah"},
+      { info: "Reservation number: " + random()},
+      { info: "Permit number: " + random()}
   ]
   const infoPray= [
-    {info: "Praying in the Noble Rawdah"},
-    {info: "Reservation number: 101231342"},
-    {info: "Permit number: 101127710"}
+      { info: "Praying in the Noble Rawdah"},
+      { info: "Reservation number: " + random()},
+      { info: "Permit number: " + random()}
   ]
-  
   
   return(
       <section   className={activeUmrah || activeNoble ? 'section-info section-info--active'   :'section-info' }>
@@ -79,7 +85,8 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
                                 </div>
                             </div>
                             <div className='section-info__content-block--info'>
-                              <span className='user-subtitle'>Allowed to access Al Masjidal al Namawi in</span>
+                                  {activeUmrah && <span className='user-subtitle'>Allowed to access Masjid al-Haram entry in</span>}
+                                  {activeNoble && <span className='user-subtitle'>Allowed to access Al Masjid al Nabawi in</span>}
                               <div className='user-info days'>
                                 <span className='icon-days icon'>
                                     <img src={image12}/>
@@ -123,7 +130,8 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
                           <div className='btn-wprapper'>
                             <button className='btn btn-primary'>
                                 <span className="btn-icon icon">  <img src={image14} alt="image description"/></span>
-                                <span className='text'> Instruction in Entering Prophet`s Mosque</span>
+                                  {activeUmrah && <span className='text'>Instruction for Masjid al-Haram entry</span>}
+                                  {activeNoble && <span className='text'>Instruction in Entering Prophet's Mosque</span>}
                             </button>
                           </div>
                         
