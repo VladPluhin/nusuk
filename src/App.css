@@ -125,3 +125,11 @@ a {
 .footer__navlist  li:last-child{
   margin-right: 0px;
 }
+
+
+@media (max-width: 374px) { 
+  .list-icons .list-icons--icon{
+    width: 89px;
+    height: 89px;
+  }
+}

@@ -320,3 +320,13 @@
     }
 }
   
+
+
+@media (max-width: 374px) { 
+    .section-info{
+        padding-top: 257px;
+    }
+    .section-info__content {
+        height: calc(100vh - 261px);
+    }
+}

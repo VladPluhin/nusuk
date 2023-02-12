@@ -44,3 +44,17 @@ input:focus {
   border-color: #756d6d;
 }
 
+
+@media (max-width: 374px) { 
+  .sectionForm {
+    padding-top: 25px;
+  }
+  input {
+    min-height: 25px;
+    }
+ 
+
+  .form__info-group {
+      margin-bottom: 17px;
+  }
+}
