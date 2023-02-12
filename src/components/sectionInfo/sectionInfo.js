@@ -14,8 +14,8 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
   const [popupIsActive, setPopupIsActive] = useState(false)
 
   function random() {
-      const min = 10100000;
-      const max = 10200000;
+      const min = 101000000;
+      const max = 102000000;
       const rand = min + Math.random() * (max - min);
       return rand.toFixed(0);
   }
@@ -104,7 +104,7 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
                                               <img src={image13}/>
                                             </span>
                                             <div className='info-body'>
-                                              <span  className='user-subtitle'> Time (From-To)</span>
+                                              <span  className='user-subtitle'> Time (From - To)</span>
                                               <span className='day'>{formData.timeFromTo}</span>
                                               </div>
                                           </div>
