@@ -126,12 +126,12 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
                         </div>
                     </div>
                     <div className='section-info__content-block'>
-                        <h2 className='section-info__content-block--title'>Instruction</h2>
+                        <h2 className='section-info__content-block--title'>Instructions</h2>
                           <div className='btn-wprapper'>
                             <button className='btn btn-primary'>
                                 <span className="btn-icon icon">  <img src={image14} alt="image description"/></span>
-                                  {activeUmrah && <span className='text'>Instruction for Masjid al-Haram entry</span>}
-                                  {activeNoble && <span className='text'>Instruction in Entering Prophet's Mosque</span>}
+                                  {activeUmrah && <span className='text'>Instructions for Masjid al-Haram entry</span>}
+                                  {activeNoble && <span className='text'>Instructions in Entering Prophet's Mosque</span>}
                             </button>
                           </div>
                         
