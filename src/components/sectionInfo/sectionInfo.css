@@ -91,6 +91,7 @@
 
 .section-info__list-info  li{
    margin-bottom: 10px;
+   white-space: pre;
 }
 
 .btn-wprapper {
