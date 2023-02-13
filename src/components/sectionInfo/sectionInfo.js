@@ -10,8 +10,8 @@ import image13 from '../../assets/images/image13.png'
 import image14 from '../../assets/images/image14.png'
 
 
-const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActiveNoble, })=> {
-  const [popupIsActive, setPopupIsActive] = useState(false)
+const SectionInfo = ({ formData, activeUmrah, setActiveUmrah, activeNoble, setActiveNoble, nobleGender }) => {
+    const [popupIsActive, setPopupIsActive] = useState(false)
 
   function random() {
       const min = 101000000;
@@ -31,7 +31,7 @@ const SectionInfo=({formData, activeUmrah, setActiveUmrah, activeNoble , setActi
       { info: "Permit number: " + random()}
   ]
   const infoPray= [
-      { info: "Praying in the Noble Rawdah"},
+      { info: "Praying in the Noble Rawdah- " + nobleGender},
       { info: "Reservation number: " + random()},
       { info: "Permit number: " + random()}
   ]

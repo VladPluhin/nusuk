@@ -8,24 +8,24 @@ import image05 from '../../assets/images/image05.png'
 import image06 from '../../assets/images/image06.png'
 import bgIcon from '../../assets/images/bg-icon.png'
 import bgimage02 from '../../assets/images/bg-icon02.png'
-const SectionMain=({formData,activeUmrah, setActiveUmrah, activeNoble, setActiveNoble  })=> {
-    
+const SectionMain = ({ formData, activeUmrah, setActiveUmrah, activeNoble, setActiveNoble, setNobleGender }) => {
+
     function getUmrah(activeUmrah, setActiveUmrah)  {
         if(!activeUmrah) {
          return setActiveUmrah(true)
         } else {
           return setActiveUmrah(false)
         }
-      }
+    }
       
-      function getNoble(activeNoble, setActiveNoble)  {
-        if(!activeNoble) {
-         return setActiveNoble(true)
+    function getNoble(activeNoble, setActiveNoble, stringGender) {
+        setNobleGender(stringGender)
+        if (!activeNoble) {
+            return setActiveNoble(true)
         } else {
-          return setActiveNoble(false)
+            return setActiveNoble(false)
         }
       }
-
 
     return(
         <section className='section-main'>
@@ -77,13 +77,13 @@ const SectionMain=({formData,activeUmrah, setActiveUmrah, activeNoble, setActive
                         <div className='section-main__content-block'>
                                 <h5 className='section-main__subtitle'>Prophet's Mosque Services</h5>
                                 <ul className='list-icons' >
-                                    <li  onClick={()=> getNoble(activeNoble, setActiveNoble)}>
+                                <li onClick={() => getNoble(activeNoble, setActiveNoble, "Men")}>
                                         <span className='list-icons--icon'>
                                             <img src={image05}  alt="reservation"/>
                                         </span>
                                         <span className='list-icons--subtitle'>Praying in the Nobel Rawdah- Men</span>
                                     </li>
-                                    <li  onClick={()=> getNoble(activeNoble, setActiveNoble)}>
+                                <li onClick={() => getNoble(activeNoble, setActiveNoble, "Women")}>
                                         <span className='list-icons--icon'>
                                             <img src={image06}  alt="reservation Management"/>
                                         </span>

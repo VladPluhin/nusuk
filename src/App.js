@@ -4,12 +4,14 @@ import './App.css';
 import Footer from './components/footer/Footer';
 import SectionMain from './components/sectionMain/SectionMain';
 import SectionForm from './components/sectionForm/SectionForm';
-import SectionInfo from './components/sectionInfo/sectionInfo'
+import SectionInfo from './components/sectionInfo/sectionInfo';
 
 function App ({data}) {
-  const [formActive, setFormActive] = useState(false);
-  const [activeUmrah, setActiveUmrah]= useState(false)
-  const [activeNoble, setActiveNoble]= useState(false)
+
+ const [formActive, setFormActive] = useState(false);
+ const [activeUmrah, setActiveUmrah] = useState(false);
+ const [activeNoble, setActiveNoble] = useState(false);
+    const [nobleGender, setNobleGender] = useState('Gender');
  
   const [formData, setFormData]= useState({
     name: 'ABU BAKR',
@@ -31,14 +33,15 @@ function App ({data}) {
   } 
   return (
     <div className="wrapper">
-        <SectionMain formData={formData}
-            activeUmrah={activeUmrah} setActiveUmrah={setActiveUmrah}
-            activeNoble={activeNoble} setActiveNoble={setActiveNoble}
+          <SectionMain formData={formData}
+              activeUmrah={activeUmrah} setActiveUmrah={setActiveUmrah}
+              activeNoble={activeNoble} setActiveNoble={setActiveNoble}
+              setNobleGender={setNobleGender}
          />
         <SectionForm formActive={formActive} formData={formData} setFormData={setFormData} getFilterValue={getFilterValue}/>
         <Footer isFormActive ={formActive} setForm={setFormActive} />
         <SectionInfo formData={formData} data={data} activeUmrah={activeUmrah} setActiveUmrah={setActiveUmrah}
-            activeNoble={activeNoble} setActiveNoble={setActiveNoble}/>
+              activeNoble={activeNoble} setActiveNoble={setActiveNoble} nobleGender={nobleGender} />
     </div>  
   )
 }
